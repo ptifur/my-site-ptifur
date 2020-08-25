@@ -7,6 +7,7 @@
     --background: #ff5555;
     --lightGrey: #f6f6f6;
     --darkGrey: #505054;
+    --white: #ffffff;
 }
 
 html, body {
@@ -26,7 +27,7 @@ html, body {
 .header {
     background: var(--background);
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -51,7 +52,7 @@ html, body {
     left: 35px;
     right: 35px;
     font-size: 1.1em;
-    color: #ffffff;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
 }
@@ -64,7 +65,7 @@ html, body {
 }
 
 .nav-logo a:hover {
-    color: #ffffff;
+    color: var(--white);
 }
 
 h1 {
@@ -83,7 +84,7 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     transition: all 150ms;
 }
 
@@ -173,7 +174,7 @@ a:hover {
 
 .about-me {
     min-height: 60vh;
-    background: #ffffff;
+    background: var(--white);
     display: flex;
     justify-content: center;
     padding-top: 135px;
@@ -241,18 +242,10 @@ li {
 	} 
 }
 
-@media all and (max-width: 850px) {
-
-    .features {
-        width: 90vw;
-    }
+@media all and (max-width: 750px) {
 
     .features-container {
         justify-content: center;
-    }
-
-    .about-me-container {
-        width: 90vw;
     }
 
     .about-me-image {
@@ -269,5 +262,16 @@ li {
         grid-row: 1 / 2;
         grid-column: 2 / 4;
         
+    }
+}
+
+@media all and (max-width: 1050px) {
+    
+    .features {
+        width: 90vw;
+    }
+
+    .about-me-container {
+        width: 90vw;
     }
 }
